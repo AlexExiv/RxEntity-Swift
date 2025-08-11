@@ -55,7 +55,7 @@ public class REEntityObservable<Entity: REEntity>
     deinit
     {
         collection?.Remove( object: self )
-        print( "EntityObservable has been deleted. UUID - \(uuid)" )
+        REEntityCollectionConfig.Log( "EntityObservable has been deleted. UUID - \(uuid)" )
     }
     
     /// Suspend updating of data. After that `EntityObservable` frezees requesting of the updating of the data when it gets update event.

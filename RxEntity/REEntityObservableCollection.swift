@@ -84,8 +84,8 @@ public class REEntityObservableCollectionExtra<Entity: REEntity, CollectionExtra
                         let indirect = $0.filter { $0.fieldPath != nil }
                             .map { k in self.sharedEntities.values.filter { REEntityKey( $0[keyPath: k.fieldPath!] as! AnyHashable ) == k.key }.map { $0._key } }.flatMap { $0 }
 
-                        print( "\(type( of: Entity.self )): Repository requested update: \($0)" )
-                        print( "\(type( of: Entity.self )): Total updates: KEYS - \(keys.count); ENTITIES - \(entities.count); INDIRECT - \(indirect.count)" )
+                        REEntityCollectionConfig.Log( "\(type( of: Entity.self )): Repository requested update: \($0)" )
+                        REEntityCollectionConfig.Log( "\(type( of: Entity.self )): Total updates: KEYS - \(keys.count); ENTITIES - \(entities.count); INDIRECT - \(indirect.count)" )
                         
                         if keys.count == 1
                         {

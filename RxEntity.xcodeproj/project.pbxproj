@@ -29,6 +29,7 @@
 		FB4AF619252D873B004B879D /* REArrayKeyObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4AF618252D873B004B879D /* REArrayKeyObservable.swift */; };
 		FB4AF61D252D95C3004B879D /* REArrayKeyObservableCollectionExtra.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4AF61C252D95C3004B879D /* REArrayKeyObservableCollectionExtra.swift */; };
 		FB4BC502250E79A5008600D8 /* RERepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4BC501250E79A5008600D8 /* RERepository.swift */; };
+		FB53CD432E49D63C006B4071 /* REEntityCollectionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB53CD422E49D637006B4071 /* REEntityCollectionConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		FB4AF618252D873B004B879D /* REArrayKeyObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REArrayKeyObservable.swift; sourceTree = "<group>"; };
 		FB4AF61C252D95C3004B879D /* REArrayKeyObservableCollectionExtra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REArrayKeyObservableCollectionExtra.swift; sourceTree = "<group>"; };
 		FB4BC501250E79A5008600D8 /* RERepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RERepository.swift; sourceTree = "<group>"; };
+		FB53CD422E49D637006B4071 /* REEntityCollectionConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REEntityCollectionConfig.swift; sourceTree = "<group>"; };
 		FF580E9F25EDE9341E484563 /* Pods_RxEntity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxEntity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -137,6 +139,7 @@
 		FB0F771A23F17DDD00F71B91 /* RxEntity */ = {
 			isa = PBXGroup;
 			children = (
+				FB53CD422E49D637006B4071 /* REEntityCollectionConfig.swift */,
 				FB0C0FF32BBEA2B4003947C0 /* PrivacyInfo.xcprivacy */,
 				FB0F773A23F1830500F71B91 /* REEntity.swift */,
 				FB4BC501250E79A5008600D8 /* RERepository.swift */,
@@ -288,9 +291,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RxEntityTests/Pods-RxEntityTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RxEntityTests/Pods-RxEntityTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -350,6 +357,7 @@
 			files = (
 				FB0F773F23F1830500F71B91 /* RESingleObservableCollectionExtra.swift in Sources */,
 				FB0F774223F1830500F71B91 /* REEntityCollection.swift in Sources */,
+				FB53CD432E49D63C006B4071 /* REEntityCollectionConfig.swift in Sources */,
 				FB0F774123F1830500F71B91 /* REPaginatorObservable.swift in Sources */,
 				FB0F773D23F1830500F71B91 /* REPaginatorObservableCollectionExtra.swift in Sources */,
 				FB0F774323F1830500F71B91 /* REEntity.swift in Sources */,

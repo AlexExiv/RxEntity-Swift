@@ -192,7 +192,7 @@ public class REKeyArrayObservableCollectionExtra<Entity: REEntity, Extra, Collec
                 {
                     let exist = $0.0.asEntitiesMap()
                     let new = $0.1.asEntitiesMap()
-                    print( "KeyArray exist: \(exist.count); new: \(new.count)" )
+                    REEntityCollectionConfig.Log( "KeyArray exist: \(exist.count); new: \(new.count)" )
                     return params.keys.compactMap { exist[$0] ?? new[$0] }
                 }
         }
