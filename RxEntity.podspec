@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "RxEntity"
-s.version      = "0.7.1"
+s.version      = "0.7.2"
 s.summary      = "Swift Entity collection based on RxSwift"
 
 # This description is used to generate tags and improve search results.
@@ -79,7 +79,7 @@ s.swift_version = "5.3"
 #  Supports git, hg, bzr, svn and HTTP.
 #
 
-s.source       = { :git => "https://github.com/AlexExiv/RxEntity-Swift.git", :tag => "0.7.1" }
+s.source       = { :git => "https://github.com/AlexExiv/RxEntity-Swift.git", :tag => "0.7.2" }
 
 
 # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -132,9 +132,9 @@ s.source_files  = 'RxEntity', 'RxEntity/**/*.{h,m,swift}'
 s.requires_arc = true
 
 # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-s.dependency "RxSwift", "~> 6.7.1"
-s.dependency "RxCocoa", "~> 6.7.1"
-s.dependency "RxRelay", "~> 6.7.1"
+s.dependency 'RxSwift', '>= 6.7.1', '< 7.0'
+s.dependency 'RxCocoa', '>= 6.7.1', '< 7.0'
+s.dependency 'RxRelay', '>= 6.7.1', '< 7.0'
 
 s.resource_bundles = { "RxEntity" => ["RxEntity/PrivacyInfo.xcprivacy"] }
 

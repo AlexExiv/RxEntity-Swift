@@ -3,9 +3,9 @@ platform :ios, '12.0'
 use_frameworks!
 
 def shared_pods
-  pod 'RxSwift',    '~> 6.7.1'
-  pod 'RxCocoa',    '~> 6.7.1'
-  pod 'RxRelay',    '~> 6.7.1'
+  pod 'RxSwift',    '~> 6.10.1'
+  pod 'RxCocoa',    '~> 6.10.1'
+  pod 'RxRelay',    '~> 6.10.1'
 end
 
 target 'RxEntity' do
@@ -15,6 +15,6 @@ end
 target 'RxEntityTests' do
     shared_pods
     
-    pod 'RxBlocking', '~> 6.7.1'
-    pod 'RxTest', '~> 6.7.1'
+    pod 'RxBlocking', '~> 6.10.1'
+    pod 'RxTest', '~> 6.10.1'
 end
